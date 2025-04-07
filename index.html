@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Zone</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(to right, #FF1493, #C71585);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10%;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #FF1493;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x600/?technology,gadgets') no-repeat center center/cover;
+            color: white;
+            padding: 80px 10%;
+            font-size: 26px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px black;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 30px;
+        }
+        .section {
+            background: #1A1A1A;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 20, 147, 0.5);
+            border-left: 5px solid #FF1493;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .category-card {
+            background: #222;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+        }
+        .btn {
+            background: #FF1493;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #C71585;
+        }
+        footer {
+            background: #111;
+            color: white;
+            padding: 20px;
+            font-size: 14px;
+            border-top: 5px solid #FF1493;
+        }
+        .highlight {
+            color: #FF1493;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Tech Zone</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <div id="home" class="hero">
+        Welcome to Tech Zone! The best place for all your tech needs.
+    </div>
+
+    <div id="products" class="container">
+        <div class="section">
+            <h2 class="highlight">Product Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <h3>Smartphones</h3>
+                    <p>Latest models from top brands.</p>
+                    <button class="btn">Shop Now</button>
+                </div>
+                <div class="category-card">
+                    <h3>Laptops</h3>
+                    <p>Powerful performance for every need.</p>
+                    <button class="btn">Shop Now</button>
+                </div>
+                <div class="category-card">
+                    <h3>Accessories</h3>
+                    <p>Chargers, headphones, and more.</p>
+                    <button class="btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="container">
+        <div class="section">
+            <h2 class="highlight">About Us</h2>
+            <p>Welcome to Tech Zone! We are a team of tech enthusiasts who strive to bring you the best tech products at unbeatable prices. Our mission is to provide you with quality gadgets and exceptional customer service.</p>
+            <h3>Meet Our Team</h3>
+            <p><strong>Alixandria Sinclair</strong> - Lead Developer & Founder</p>
+            <p><strong>John Doe</strong> - Marketing Manager</p>
+            <p><strong>Jane Doe</strong> - Customer Support</p>
+        </div>
+    </div>
+
+    <div id="contact" class="container">
+        <div class="section">
+            <h2 class="highlight">Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us.</p>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required><br><br>
+                <input type="email" name="email" placeholder="Your Email" required><br><br>
+                <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Follow us on <span class="highlight">Social Media</span> | Contact Information | Privacy Policy</p>
+    </footer>
+</body>
+</html>
+
